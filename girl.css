@@ -1,0 +1,134 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#wrapper {
+    max-width: 960px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+
+.nav-bar {
+    background-color: grey;
+    padding: 2px 0px;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list {
+    padding-right: 20px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-list:hover a, .contact-list:hover a {
+    color: blanchedalmond;
+}
+
+#body-container {
+    background-color: rgb(223, 215, 215);
+    position: relative;
+}
+
+.search-bar {
+    position: absolute;
+    top: 120px;
+    right: 210px;
+}
+
+.search-box {
+    width: 200px;
+    height: auto;
+    padding: 5px 20px 5px 5px;
+    border-radius: 25px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 12px;
+}
+
+.search-icon {
+    max-width: 20px;
+    height: auto;
+    position: absolute;
+    padding-top: 6px;
+    right: 5px;
+}
+
+.animation {
+    padding: 20px;
+}
+
+#bird {
+    animation: cute-bird 10s infinite;
+    transform-origin: left;
+}
+@keyframes cute-bird {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(80deg);
+    }
+}
+
+#left-foot {
+    animation: foot-1 2s infinite;
+    transform-origin: right;
+
+}
+@keyframes foot-1 {
+    from {
+        transform: rotateY(0deg);    
+    }
+    to {
+        transform: rotateY(20deg);
+    }
+}
+
+#right-foot {
+    animation: foot-2 2s infinite;
+    transform-origin: left;
+}
+@keyframes foot-2 {
+    from {
+        transform: rotateY(0deg);    
+    }
+    to {
+        transform: rotateY(25deg);
+    }
+}
+
+#footer {
+    background-color: grey;
+    padding: 1px;
+}
+
+#footer h4 {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.contact ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: -15px 0px 10px 0px;
+}
+
+.contact-list a {
+    text-decoration: none;
+    padding-right: 20px;
+    color: black;
+    font-size: 15px;
+}
